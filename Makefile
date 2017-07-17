@@ -1,8 +1,8 @@
-LIBROOT	 = /usr/local/lib
-CXXFLAGS = -Wall -Wextra -Wpedantic -std=c++11 -Os -O2
-LDFLAGS	 = -L$(LIBROOT) -I$(LIBROOT) -ltins -lpcap
+LIBROOT  = /usr/local/lib
+CXXFLAGS  = -Wall -Wextra -Wpedantic -std=c++11 -Os -O2
+LDFLAGS  = -L$(LIBROOT) -I$(LIBROOT) -ltins -lpcap
 
-PROGS = pcap_network_flow
+PROGS	= pcap_network_flow
 
 UNAME := $(shell uname -s)
 ifeq ($(UNAME), $(filter $(UNAME), Darwin FreeBSD))
