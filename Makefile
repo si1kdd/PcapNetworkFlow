@@ -8,7 +8,7 @@ UNAME := $(shell uname -s)
 ifeq ($(UNAME), $(filter $(UNAME), Darwin FreeBSD))
 	CXX = clang++
 else
-	CXX = clang++
+	CXX = g++
 endif
 
 
