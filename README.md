@@ -3,7 +3,7 @@
 * Using [libtins](http://libtins.github.io/) library.
 
 # Features:
-* Default print out all network flow now.
+* Default print out all TCP network flow now.
 
 # Usage:
     ./pcap_network_flow PCAP_FILE.pcap

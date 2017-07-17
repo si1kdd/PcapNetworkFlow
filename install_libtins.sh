@@ -11,14 +11,14 @@ function get_char() {
 }
 
 clear
-echo " ----------- Install libtins libraries ------------ "
+echo " ----------- Install libtins library ------------   "
 echo " [*] This scripts would work on FreeBSD and Linux   "
 echo "          Just a scripts for lazy guy like me...    "
 echo " [!] The default library path is: "
 echo "          /usr/local/lib          "
 echo "          /usr/local/include      "
 echo " [!] You can modify the path by yourself."
-echo " -------------------------------------------------- "
+echo " ------------------------------------------------   "
 echo
 echo " [*] Press any key to start... or press Ctrl-C to cancel."
 char=`get_char`
