@@ -1,14 +1,11 @@
 # PcapNetworkFlow
-- - -
 * A very tiny programs to count out the TCP or UDP network flow in a pcap files.
 * Using [libtins](http://libtins.github.io/) library.
 
 # Features:
-- - -
 * Default print out all network flow now.
 
 # Usage:
-- - -
     ./pcap_network_flow PCAP_FILE.pcap
 
 # Dependencies:
