@@ -6,9 +6,9 @@ PROGS 	= pcap_network_flow
 
 UNAME := $(shell uname -s)
 ifeq ($(UNAME), $(filter $(UNAME), Darwin FreeBSD))
-	CC = clang
+	CXX = clang++
 else
-	CC = gcc
+	CXX = clang++
 endif
 
 
