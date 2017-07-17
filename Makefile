@@ -12,7 +12,7 @@ else
 endif
 
 
-$(PROGS): pcap_netowk_flow.cc
+$(PROGS): pcap_network_flow.cc
 	$(CXX) -o $@ $^ $(CXXFLAGS) $(LDFLAGS)
 	strip -s $(PROGS)
 clean:
