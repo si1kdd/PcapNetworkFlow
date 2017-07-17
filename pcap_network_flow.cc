@@ -81,7 +81,7 @@ static bool handle_tcp_flows(const IP *ip, const TCP *tcp, double curr_timestamp
                  ip->dst_addr().to_string().c_str(),
                  tcp->dport());
 
-        // Markup this flow.
+        // Mark this flow.
         map<string, FlowStat*>::iterator iter;
         if ((iter = tcpFlowState.find(src_to_dst)) != tcpFlowState.end()) {
                 auto flow_no = iter->second;
@@ -186,9 +186,7 @@ static bool callback(const Packet &packet)
         snprintf(time_str, sizeof(time_str), "%lu.%06ld", (long)total_sec, tv.tv_usec);
 
         // string pass_str(time_str);
-
-        // Passing C++ string may make object copy overhead.
-        // Try to pass type double.
+        // Try to pass double type here.
         double curr_time = std::strtod(time_str, NULL);
 
         if ((tcp = pdu->find_pdu<TCP>()) != NULL)
@@ -230,7 +228,7 @@ static void print_output()
                          << ":"
                          << (*iter).get_dst_port();
 
-                // Packet timestamp should equal to packet count.
+                // Packet timestamp count should equal to packet count.
                 uint32_t flow_timestamp_count = (*iter).get_TimeStamp_size();
 
                 printf("(%3d) %-6lld %-15lld %-50s %-3s %-30s Occur: First: %-LF Last: %-LF\n",
