@@ -1,2 +1,5 @@
-# PcapNetworkFlow
-A little programs to count out the TCP or UDP network flow in pcap files.
+# PcapNetworkFlowCount
+
+* A very tiny program to parse the pcap files, default print out the flow number now.
+
+* Check out develop branch.
